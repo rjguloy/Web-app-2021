@@ -1,0 +1,57 @@
+$chart_green: #1da054;
+$chart_red: #de193a;
+$chart_yellowish: #faaf3b;
+$chart_blue: #174882;
+$chart_gray: #bdc3c7;
+$table_gray: #a3a6b4;
+$table_lightgray: #f5f6fa;
+
+.canvasjs-chart-credit {
+    display: none;
+}
+.cover {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+}
+.legend {
+    li {
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    .submitted {
+        background-color: $chart_green;
+        margin-right: 3px;
+    }
+    .not-submitted {
+        background-color: $chart_red;
+        margin-left: 3px;
+    }
+    .hazard {
+        background-color: $chart_yellowish;
+    }
+    .capacity {
+        background-color: $chart_blue;
+        margin: 0 5px;
+    }
+    .others {
+        background-color: $chart_gray;
+    }
+    .mailIcons {
+        height: 62px;
+    }
+}
+table {
+    thead {
+        color: $table_gray;
+        background-color: $table_lightgray;
+    }
+}
+
+.filters.colreports {
+    .form-group {
+        width: 100%;
+        max-width: 200px;
+    }
+}

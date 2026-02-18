@@ -1,0 +1,20 @@
+footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $inner-page;
+	p {
+	}
+	/*.footer-img {
+		max-width: 400px;
+	}*/
+	img {
+		max-width: 230px;
+	}
+}
+.login-fix {
+	height: 87vh;
+	footer {
+		flex: 1;
+	}
+}

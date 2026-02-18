@@ -1,0 +1,31 @@
+.security-questions {
+	display: none;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	background-color: white;
+	&.show {
+		display: block;
+	}
+	.m-header {
+		border-bottom: 1px solid $seperator;
+	}
+	.m-body {
+
+	}
+	.m-footer {
+
+	}
+}
+.dpn {
+	input[type=checkbox] + label {
+		padding-left: 25px;
+	}
+	input[type=checkbox] + label:before {
+		border-color: white;
+	}
+	input[type=checkbox]:checked + label:before {
+		border-top-color: transparent !important;
+		border-left-color: transparent !important;
+	}
+}

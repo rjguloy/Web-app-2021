@@ -1,0 +1,16 @@
+header {
+	z-index: 100;
+	background-image: linear-gradient(to right, $gradient-start, $gradient-end);
+	@include media-breakpoint-down(lg) {
+		text-align: center;
+	}
+	.site-logo {
+		text-align: right;
+		@include media-breakpoint-down(lg) {
+			text-align: center;
+		}
+		img {
+			max-width: 150px;
+		}
+	}
+}

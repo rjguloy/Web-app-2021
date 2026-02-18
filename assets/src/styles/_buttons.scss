@@ -1,0 +1,42 @@
+.btn {
+	border: none !important;
+	color: white !important;
+}
+.btn-primary {
+	background-color: $primary-btn;
+	&:hover {
+		background-color: $primary-btn-hover;
+	}
+}
+.btn-cancel {
+	background-color: $cancel-btn;
+	&:hover {
+		background-color: $cancel-btn-hover;
+	}
+}
+.btn-submit {
+	background-color: $add-btn;
+	&:hover {
+		background-color: $add-btn-hover;
+	}
+}
+.btn-add {
+	background-color: $add-btn;
+	&:hover {
+		background-color: $add-btn-hover;
+	}
+}
+.btn-delete {
+	background-color: $delete-btn;
+	&:hover {
+		background-color: $delete-btn-hover;
+	}
+}
+.active {
+	background-color: $active;
+	color: white;
+}
+.inactive {
+	background-color: $inactive;
+	color: white;
+}

@@ -1,0 +1,29 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+
+@import "variables";
+@import "bootstrap";
+
+@import "defaults";
+@import "buttons";
+@import "nav";
+@import "page";
+@import "sidebar-toggler";
+@import "custom-checkbox";
+@import "prompt";
+@import "gallery";
+@import "responsive-medium";
+
+@import "header";
+@import "footer";
+@import "slider";
+
+@import "login";
+@import "register";
+@import "home";
+
+@import "chart";
+
+@import "dataTables";
+
+@import "../../../node_modules/slick-carousel/slick/slick";
+@import "../../../node_modules/flatpickr/dist/themes/dark.css";

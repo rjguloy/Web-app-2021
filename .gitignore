@@ -1,0 +1,43 @@
+# OS/IDE Files
+/.idea
+/.vagrant
+.DS_Store
+
+# Dependencies
+/vendor
+/node_modules
+
+# Storage
+/public/hot
+/public/storage
+/storage/*.key
+
+# Configuration/Dev
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+php_errors.log
+composer.lock
+package-lock.json
+
+# Parcel Build
+.cache/
+
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/

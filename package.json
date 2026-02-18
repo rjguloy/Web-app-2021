@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.9"
+  },
+  "scripts": {
+    "dev": "node_modules/.bin/parcel assets/src/scripts/main.js assets/src/styles/main.scss -d assets/dist --no-hmr",
+    "build": "node_modules/.bin/parcel build assets/src/scripts/main.js assets/src/styles/main.scss -d assets/dist"
+  },
+  "dependencies": {
+    "assets": "^3.0.1",
+    "bootstrap": "^4.3.1",
+    "canvasjs": "^1.8.3",
+    "chart.js": "^2.9.3",
+    "datatables.net": "^1.10.19",
+    "datatables.net-bs4": "^1.10.19",
+    "flatpickr": "^4.6.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "slick-carousel": "^1.8.1",
+    "yarn": "^1.22.4"
+  }
+}

@@ -1,0 +1,24 @@
+#search-location {
+	max-width: 300px;
+}
+#add-building {
+	vertical-align: baseline;
+}
+#location-list {
+	.card {
+		&:nth-child(odd) .card-header {
+			background-color: $bldg-odd;
+		}
+		&:nth-child(even) .card-header {
+			background-color: $bldg-even;
+		}
+		.wrapper {
+			top: 10px;
+			right: 0.75rem;
+			img {
+				width: 15px;
+				margin: 0 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width: 993px) and (max-width: 1560px) {
+	.page-content-wrapper {
+		min-height: 644px;
+
+		header {
+			.site-name {
+				text-align: left;
+			}
+			.site-logo {
+				text-align: right;
+			}
+		}
+		.col-chart {
+			.filters {
+				&.colreports {
+					.form-group {
+						margin-right: 0.5rem !important;
+						margin-bottom: 0.5rem !important;
+					}
+					a.btn {
+						max-height: 38px;
+						margin-left: 0 !important;
+						margin-right: 0.5rem !important;
+					}
+				}
+				a#btn-export {
+					margin-left: 0 !important;
+				}
+			}
+		}
+	}
+}

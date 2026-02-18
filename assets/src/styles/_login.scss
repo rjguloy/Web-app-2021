@@ -1,0 +1,55 @@
+.login {
+	/*flex: 1;*/
+	margin-top: -1rem;
+	.login-panel {
+		width: 440px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 12rem;
+		background-color: $login-panel;
+		@include media-breakpoint-down(lg) {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		h2 {
+			white-space: nowrap;
+		}
+		.form-check-input {
+			margin-top: 0.45rem;
+		}
+		/*.create-acc {
+			background-color: $create-acc;
+		}*/
+		&.forgot-password {
+			transform: translateY(-80%);
+		}
+	}
+}
+.login {
+	.slider {
+		.login-slider {
+			.slick-slide > div {
+				height: 80vh;
+			}
+			.slider-item {
+				height: 100%;
+				.banner {
+					height: 100%;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
+			}
+		}
+	}
+}
+.password-expiration {
+	display: none;
+	bottom: 1em;
+	right: 0;
+	background-color: white;
+	&.show {
+		display: block;
+	}
+}

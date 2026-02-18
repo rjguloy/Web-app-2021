@@ -1,0 +1,27 @@
+.error-msg {
+	color: $error-msg;
+	background-color: $error-msg-bg;
+	display: none;
+	&.show {
+		display: block; 
+	}
+}
+.success-msg {
+	color: $success-msg;
+	background-color: $success-msg-bg;
+	display: none;
+	&.show {
+		display: block; 
+	}
+}
+.error-msg,
+.success-msg {
+	margin: 0.25rem 0;
+}
+
+.alert {
+	display: none;
+	&.show {
+		display: block !important;
+	}
+}

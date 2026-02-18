@@ -1,0 +1,66 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	font-family: "Open Sans", "Helvatica", Arial;
+	flex-direction: column;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	min-height: 100vh;
+	-webkit-box-orient: vertical;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+.flexboxtweener,
+.flexboxtweener > body {
+	height: 100%;
+}
+.row {
+	margin: 0;
+}
+.form-check-input,
+.form-check-label {
+	cursor: pointer;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a,
+button,
+button:focus,
+button:active,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+a {
+	border: none !important;
+	&:hover {
+		text-decoration: none;
+	}
+}
+table tr th,
+table tr td {
+	border: 1px solid $seperator;
+}
+
+input,
+button {
+	min-height: 40px !important;
+}

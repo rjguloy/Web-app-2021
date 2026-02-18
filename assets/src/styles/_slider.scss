@@ -1,0 +1,38 @@
+/*Slick Fixes*/
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+	display: none !important;
+}
+ul.slick-dots {
+	list-style-type: none;
+	/*background-color: $dots-bg;*/
+	opacity: .8;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 5px;
+	padding: 1rem;
+	margin: 0;
+	@include media-breakpoint-down(md) {
+		bottom: 68px;
+	}
+	li {
+		display: inline-block;
+		margin: .50rem .15rem 0 .15rem;
+		overflow: hidden;
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+		button {
+			color: transparent;
+			border: none;
+		}
+		&.slick-active {
+			button {
+				background-color: $active-dot;
+			}
+		}
+	}
+}

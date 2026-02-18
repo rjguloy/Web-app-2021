@@ -1,0 +1,81 @@
+body {
+	background-color: $inner-page;
+}
+body > .wrapper {
+	background-color: white;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+}
+.page-content-wrapper {
+	> div.container-fluid {
+		background-color: white;
+		padding-top: 1rem;
+	}
+	margin-bottom: 3rem;
+	.page-title {
+		border-bottom: 1px solid $seperator;
+	}
+}
+.accordion {
+	.card {
+		.card-header {
+			background-color: $accordion;
+		}
+		.card-header {
+			background-color: $accordion-open;
+			color: white;
+			svg {
+				transition: all 0.5s;
+				transform: rotate(180deg);
+				position: absolute;
+				top: 20px;
+				right: 25px;
+				path {
+					fill: white;
+				}
+			}
+		}
+		.card-header.collapsed {
+			background-color: $accordion;
+			color: $accordion-open;
+			svg {
+				transform: rotate(0deg);
+				path {
+					fill: $accordion-open;
+				}
+			}
+		}
+		.wrapper {
+			top: 10px;
+			right: 60px;
+			img {
+				width: 15px;
+				margin: 0 5px;
+			}
+		}
+	}
+}
+.icon {
+	width: 20px;
+	height: 20px;
+}
+/*Locations*/
+#search-location {
+	max-width: 300px;
+}
+/*DataTables Fix*/
+.custom-select {
+	background: none !important;
+}
+.pagination {
+	margin-bottom: 2rem !important;
+}
+table {
+	.btn-submit,
+	.btn-delete {
+		width: 45px !important;
+		height: 45px !important;
+	}
+}

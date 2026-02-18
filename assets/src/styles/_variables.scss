@@ -1,0 +1,83 @@
+/*_header.scss*/
+$header: #de193a;
+$gradient-start: #b70c29;
+$gradient-end: #ffbb77;
+
+/*_footer.scss*/
+$footer-bg: #333;
+
+/*_slider.scss*/
+/*$dots-bg: #404040;*/
+$active-dot: #f8c43d;
+
+/*_login.scss*/
+$login-panel: rgba(194, 41, 41, 0.8);
+$create-acc: #f5595a;
+$error-msg: #d8000c;
+$error-msg-bg: #ffbaba;
+$success-msg: #155724;
+$success-msg-bg: #d4edda;
+
+/*_register.scss*/
+$seperator: #dcdcdc;
+
+/*_checklist.scss*/
+$hazard-header: #346c9b;
+$capacity-header: #2fc9e5;
+
+/*_locations.scss*/
+$building-row: #f2f2f2;
+$bldg-odd: #346c9b;
+$bldg-even: #2fc9e5;
+$accordion: #e9ecef;
+$accordion-open: #346c9b;
+
+/*_buttons.scss*/
+$primary-btn: #174882;
+$primary-btn-hover: #0b3567;
+$cancel-btn: #a5a5a5;
+$cancel-btn-hover: #8b8b8b;
+$submit-btn: #1ea12d;
+$add-btn: #28c76f;
+$add-btn-hover: #17b25c;
+$delete-btn: #de193a;
+$delete-btn-hover: #b70c29;
+$active: #40e1ff;
+$inactive: #7c7c7c;
+
+/*_nav.scss*/
+$sidebar: #174882;
+$sidebar-font: #8ba4c1;
+$sidebar-font-h: #8ba4c1;
+
+/*_custom_checkbox.scss*/
+$checkbox-color: #6cc0e5;
+
+/*_page*/
+$inner-page: #e9ebee;
+
+// $grid-breakpoints: (
+// 	xs: 0,
+// 	sm: 375px,
+// 	md: 768px,
+// 	lg: 992px,
+// 	xl: 1200px,
+// 	2xl: 1440px,
+// 	3xl: 1800px,
+// 	4xl: 2500px,
+// );
+
+// // Grid containers
+
+// $container-max-widths: (
+// 	sm: 540px,
+// 	md: 720px,
+// 	lg: 960px,
+// 	xl: 1140px,
+// 	2xl: 1200px,
+// 	3xl: 1440px,
+// 	4xl: 2000px,
+// );
+
+/*Bootstrap Variables*/
+@import "../../../node_modules/bootstrap/scss/variables";

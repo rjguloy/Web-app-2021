@@ -1,0 +1,202 @@
+/*!
+* Start Bootstrap - Simple Sidebar (https://startbootstrap.com/)
+* Copyright 2013-2016 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+*/
+
+body {
+	overflow-x: hidden;
+}
+
+/* Toggle Styles */
+
+.wrapper {
+	padding-left: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	&.toggled {
+		.custom-menu {
+			.btn {
+				&.btn-primary {
+					&:before {
+						content: "\f054";
+						padding-left: 6px;
+					}
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.custom-menu {
+		height: 60px;
+		display: inline-block;
+		position: relative;
+		top: 28px;
+		z-index: 0;
+		@include transition(0.3s);
+
+		.btn {
+			width: 32px;
+			height: 60px;
+			border-radius: 50%;
+			position: relative;
+			i {
+				font-size: 14px;
+				color: #fff !important;
+			}
+			&.btn-primary {
+				background: transparent;
+				border-color: transparent;
+				&:after,
+				&:before {
+					z-index: -1;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					font-family: FontAwesome;
+					background: #184882;
+					border-radius: 0;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+				}
+				&:after {
+					content: "\f053";
+				}
+				&:hover,
+				&:focus {
+					background: transparent !important;
+					border-color: transparent !important;
+				}
+			}
+		}
+	}
+}
+
+.sidebar-wrapper {
+	position: relative;
+	z-index: 2;
+	min-width: 320px;
+	overflow-y: auto;
+	background: $sidebar;
+}
+
+.activeSidebar {
+	background-color: #0d3a6b !important;
+	display: block;
+}
+
+.selected {
+	font-weight: 700;
+	color: #ffffff !important;
+}
+.wrapper.toggled {
+	& .sidebar-wrapper {
+		margin-left: -320px;
+	}
+}
+
+.transitioning {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.page-content-wrapper {
+	width: 100%;
+	padding: 15px;
+	min-height: auto;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav ul li {
+	font-size: 16px;
+}
+
+.sidebar-nav > li {
+	padding: 15px 30px;
+	display: block;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	line-height: 1.8;
+
+	& ul {
+		padding-left: 0px;
+		& > li {
+			padding: 5px 15px;
+		}
+	}
+
+	&:hover {
+		background: #0d3a6b;
+		border-bottom: 1px solid #0d3a6b;
+		& > a {
+			color: #fff;
+		}
+	}
+}
+
+.sidebar-nav li a {
+	display: block;
+	text-decoration: none;
+	color: $sidebar-font;
+}
+
+.sidebar-nav li a:hover {
+	color: white;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+	height: 65px;
+	font-size: 18px;
+	line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+	color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+	color: white;
+	background: none;
+}
+#modalChangePassword,
+#school-info-settings {
+	.input-group-text {
+		width: 195px;
+	}
+}
+
+.sidebar-nav {
+	ul {
+		list-style-type: none;
+	}
+	// .sub-menu.rotate {
+	// 	svg {
+	// 		transform: rotate(180deg);
+	// 	}
+	// }
+}
